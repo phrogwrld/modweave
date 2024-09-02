@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "${MOD_ID}",
+  "version": "${VERSION}",
+  "name": "${MOD_NAME}",
+  "description": "${DESCRIPTION}",
+  "authors": ["${AUTHOR}"],
+  "contact": {
+    "sources": "https://github.com/example/repo"
+  },
+  "license": "${LICENSE}",
+  "icon": "assets/${MOD_ID}/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["${PACKAGE}.${MAIN_CLASS}"]
+  },
+  "mixins": ["${MOD_ID}.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "minecraft": "~${MINECRAFT_VERSION}",
+    "java": ">=${JAVA_VERSION}"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

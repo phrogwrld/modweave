@@ -1,0 +1,19 @@
+[package]
+name = "modweave"
+authors = ["phrog"]
+version = "0.1.0"
+edition = "2021"
+description = "An interactive CLI tool to quickly generate a Minecraft Mod Development environment"
+license = "MIT"
+repository = "https://github.com/phrogwrld/mineweave"
+
+[dependencies]
+anyhow = "1.0.86"
+clap = { version = "4.5.9", features = ['derive'] }
+crossterm = "0.28.1"
+dunce = "1.0.5"
+inquire = "0.7.5"
+reqwest = { version = "0.12.7", features = ["blocking", "json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+semver = "1.0.23"
